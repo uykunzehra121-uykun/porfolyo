@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zehra Uykun | Dijital Tasarım Portfolyosu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Üst Çubuk (Navbar) -->
+    <header class="top-navbar" onclick="scrollToTop()">
+        <div class="navbar-logo">Zehra Uykun <span class="navbar-subtitle">| Dijital Portfolyo</span></div>
+    </header>
+
+    <div class="app-container">
+        
+
+
+        <!-- Ana İçerik Alanı -->
+        <main class="main-content">
+            
+            <!-- Karşılama Ekranı (Yeni Tasarım) -->
+            <div id="view-welcome" class="view-section active">
+                <div class="welcome-container">
+                    
+                    <!-- Sol Taraf: Görsel ve Kişisel Kart -->
+                    <div class="welcome-left">
+                        <div class="avatar-card">
+                            <div class="avatar-inner">
+                                <div class="avatar-glow"></div>
+                                <div class="avatar-initials">ZU</div>
+                            </div>
+                            <div class="student-tag"><i class="fa-solid fa-graduation-cap"></i> Yeni Medya & İletişim</div>
+                        </div>
+                    </div>
+
+                    <!-- Sağ Taraf: Metinler ve Butonlar -->
+                    <div class="welcome-right">
+                        <span class="welcome-subtitle">Dijital Tasarım Portfolyosu</span>
+                        <h1>Yaratıcı Fikirler,<br><span class="gradient-text">Özgün Tasarımlar</span></h1>
+                        
+                        <p class="welcome-description">
+                            Merhaba, ben <strong>Zehra Uykun</strong>. Yeni Medya ve İletişim bölümü 1. sınıf öğrencisiyim. Dijital dünyaya olan tutkum ve tasarıma duyduğum ilgiyle kendimi geliştirmeye devam ediyorum. Bu platformda, logo ve afiş tasarımlarımdan oluşan dijital portfolyomu sergiliyorum.
+                        </p>
+
+
+
+                    </div>
+
+                </div>
+
+                <!-- Aşağı Kaydır İkonu (Scroll Down Indicator) -->
+                <div class="scroll-indicator-container" onclick="showDesign('logos')">
+                    <span class="scroll-indicator-text">Aşağı Kaydır</span>
+                    <div class="scroll-indicator-mouse">
+                        <div class="scroll-indicator-wheel"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo Tasarımları Grubu -->
+            <div id="view-logos" class="view-section">
+                <div class="category-header">
+                    <span class="category-subtitle">KATEGORİ I</span>
+                    <h2>Logo Tasarımları</h2>
+                </div>
+                
+                <div class="slider-container" id="logos-slider">
+                    <!-- Watsons -->
+                    <div class="slide active">
+                        <div class="design-layout">
+                            <div class="design-image watsons-bg">
+                                <img src="watsons.jpg.jpeg" alt="Watsons Logo Tasarımı" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder-text" style="display: none;">Watsons Logosu<br>(Resim Bulunamadı)</div>
+                            </div>
+                            <div class="design-info">
+                                <h2>Watsons Yeniden Tasarım</h2>
+                                <p>Kozmetik ve kişisel bakım dünyasının öncü markalarından Watsons için hazırladığım dinamik ve dikkat çekici logo tasarımı. Markanın enerjik yapısını yansıtmak amacıyla dairesel formlar ve canlı bir tipografi tercih ettim.</p>
+                                <div class="tags">
+                                    <span>Marka Kimliği</span>
+                                    <span>Tipografi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blue Diamond -->
+                    <div class="slide">
+                        <div class="design-layout">
+                            <div class="design-image blue-diamond-bg">
+                                <img src="blue_diamond.jpg.jpeg" alt="Blue Diamond Logo Tasarımı" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder-text" style="display: none;">Blue Diamond Logosu<br>(Resim Bulunamadı)</div>
+                            </div>
+                            <div class="design-info">
+                                <h2>Blue Diamond Zarif Dokunuş</h2>
+                                <p>Mücevherat sektörünün köklü ismi Blue Diamond için tasarladığım zarif ve modern logo çalışması. Lacivert tonlarının asaletini ve pırlanta simgesinin zarafetini klasik bir çerçeve içinde birleştirerek premium bir his yaratmayı hedefledim.</p>
+                                <div class="tags">
+                                    <span>Premium Tasarım</span>
+                                    <span>Zarafet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Media Markt -->
+                    <div class="slide">
+                        <div class="design-layout">
+                            <div class="design-image media-markt-bg">
+                                <img src="media_markt.jpg.jpeg" alt="Media Markt Logo Tasarımı" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder-text" style="display: none;">Media Markt Logosu<br>(Resim Bulunamadı)</div>
+                            </div>
+                            <div class="design-info">
+                                <h2>Media Markt Teknolojik Vizyon</h2>
+                                <p>Avrupa'nın bir numaralı elektronik perakendecisi Media Markt için yenilikçi ve teknolojik bir logo yorumu. Markanın ikonik renklerini koruyarak, daha minimal ve akılda kalıcı bir form oluşturmaya odaklandım.</p>
+                                <div class="tags">
+                                    <span>Minimalizm</span>
+                                    <span>Kurumsal Kimlik</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Golden Rose 1 -->
+                    <div class="slide">
+                        <div class="design-layout">
+                            <div class="design-image golden-rose-1-bg">
+                                <img src="golden_rose_1.png" alt="Golden Rose Logo Tasarımı 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder-text" style="display: none;">Golden Rose Tasarım 1<br>(Resim Bulunamadı)</div>
+                            </div>
+                            <div class="design-info">
+                                <h2>Golden Rose Güzelliğin İmzası</h2>
+                                <p>Kozmetik sektörünün önde gelen markalarından Golden Rose için hazırladığım modern ve estetik logo çalışması. Markanın zarif duruşunu yansıtacak detaylar ve renk geçişleri kullandım.</p>
+                                <div class="tags">
+                                    <span>Kozmetik</span>
+                                    <span>Modern Logo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Penti -->
+                    <div class="slide">
+                        <div class="design-layout">
+                            <div class="design-image penti-bg">
+                                <img src="penti.png" alt="Penti Logo Tasarımı" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder-text" style="display: none;">Penti Logosu<br>(Resim Bulunamadı)</div>
+                            </div>
+                            <div class="design-info">
+                                <h2>Penti Renkli Adımlar</h2>
+                                <p>Kadın giyim ve iç giyim sektörünün öncü markalarından Penti için hazırladığım dinamik, modern ve enerjik logo tasarımı.</p>
+                                <div class="tags">
+                                    <span>Dinamik Tasarım</span>
+                                    <span>Modern Kimlik</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide Indicators (Dots) -->
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide('logos', 0)"></span>
+                    <span class="dot" onclick="currentSlide('logos', 1)"></span>
+                    <span class="dot" onclick="currentSlide('logos', 2)"></span>
+                    <span class="dot" onclick="currentSlide('logos', 3)"></span>
+                    <span class="dot" onclick="currentSlide('logos', 4)"></span>
+                </div>
+            </div>
+
+            <!-- Film Posterleri Grubu -->
+            <div id="view-posters" class="view-section">
+                <div class="category-header">
+                    <span class="category-subtitle">KATEGORİ II</span>
+                    <h2>Film Posterleri</h2>
+                </div>
+
+                <div class="slider-container" id="posters-slider">
+                    <!-- Coraline -->
+                    <div class="slide active">
+                        <div class="design-layout">
+                            <div class="poster-image coraline-bg">
+                                <img src="coraline.png" alt="Coraline Film Posteri" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder-text" style="display: none;">Coraline Posteri<br>(Resim Bulunamadı)</div>
+                            </div>
+                            <div class="design-info">
+                                <h2>Coraline</h2>
+                                <p>Koralin ve Gizemli Dünya filmi için hazırladığım, karanlık ve gizemli atmosferi yansıtan afiş çalışması. Düğme gözlerin gizemini ve gotik renk tonlarını ön plana çıkarmayı hedefledim.</p>
+                                <div class="tags">
+                                    <span>Stop-Motion</span>
+                                    <span>Gotik Estetik</span>
+                                    <span>Afiş Tasarımı</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Corpse Bride -->
+                    <div class="slide">
+                        <div class="design-layout">
+                            <div class="poster-image corpse-bride-bg">
+                                <img src="corpse_bride.png" alt="Ölü Gelin Film Posteri" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder-text" style="display: none;">Ölü Gelin Posteri<br>(Resim Bulunamadı)</div>
+                            </div>
+                            <div class="design-info">
+                                <h2>Ölü Gelin</h2>
+                                <p>Tim Burton'ın ikonik eseri Ölü Gelin (Corpse Bride) için hazırladığım sanatsal afiş çalışması. Hüzünlü aşk hikayesini mavi ve gri tonların hakimiyetiyle tasarıma aktardım.</p>
+                                <div class="tags">
+                                    <span>Karanlık Romantizm</span>
+                                    <span>İllüstrasyon</span>
+                                    <span>Afiş Tasarımı</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Over the Garden Wall -->
+                    <div class="slide">
+                        <div class="design-layout">
+                            <div class="poster-image over-the-garden-wall-bg">
+                                <img src="over_the_garden_wall.png" alt="Over the Garden Wall Film Posteri" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder-text" style="display: none;">Over the Garden Wall Posteri<br>(Resim Bulunamadı)</div>
+                            </div>
+                            <div class="design-info">
+                                <h2>Over the Garden Wall</h2>
+                                <p>Bahçe Duvarının Ötesinde (Over the Garden Wall) serisinin sonbahar renklerini ve melankolik, masalsı dünyasını yansıtan poster tasarımı.</p>
+                                <div class="tags">
+                                    <span>Sonbahar Estetiği</span>
+                                    <span>Masalsı</span>
+                                    <span>Afiş Tasarımı</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grave of the Fireflies -->
+                    <div class="slide">
+                        <div class="design-layout">
+                            <div class="poster-image grave-of-the-fireflies-bg">
+                                <img src="grave_of_the_fireflies.png" alt="Ateş Böceklerinin Mezarı Film Posteri" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder-text" style="display: none;">Ateş Böceklerinin Mezarı Posteri<br>(Resim Bulunamadı)</div>
+                            </div>
+                            <div class="design-info">
+                                <h2>Ateş Böceklerinin Mezarı</h2>
+                                <p>Studio Ghibli'nin dramatik şaheseri Grave of the Fireflies için hazırladığım afiş çalışması. Savaşın dramını, ateş böceklerinin ışığıyla tezat oluşturan hüzünlü tonlarla yansıttım.</p>
+                                <div class="tags">
+                                    <span>Studio Ghibli</span>
+                                    <span>Dram</span>
+                                    <span>Afiş Tasarımı</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Howl's Moving Castle -->
+                    <div class="slide">
+                        <div class="design-layout">
+                            <div class="poster-image howls-moving-castle-bg">
+                                <img src="howls_moving_castle.png" alt="Yürüyen Şato Film Posteri" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder-text" style="display: none;">Yürüyen Şato Posteri<br>(Resim Bulunamadı)</div>
+                            </div>
+                            <div class="design-info">
+                                <h2>Yürüyen Şato</h2>
+                                <p>Hayao Miyazaki'nin büyüleyici dünyası Howl's Moving Castle (Yürüyen Şato) için tasarladığım afiş. Şatonun sıra dışı yapısını ve fantastik gökyüzü renklerini tasarıma aktardım.</p>
+                                <div class="tags">
+                                    <span>Fantastik</span>
+                                    <span>Hayao Miyazaki</span>
+                                    <span>Afiş Tasarımı</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide Indicators (Dots) -->
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide('posters', 0)"></span>
+                    <span class="dot" onclick="currentSlide('posters', 1)"></span>
+                    <span class="dot" onclick="currentSlide('posters', 2)"></span>
+                    <span class="dot" onclick="currentSlide('posters', 3)"></span>
+                    <span class="dot" onclick="currentSlide('posters', 4)"></span>
+                </div>
+            </div>
+
+            <!-- Site Footer / İletişim Kısmı -->
+            <footer class="site-footer">
+                <div class="footer-content">
+                    <p class="footer-text">Sorularınız veya iş birlikleri için benimle iletişime geçin</p>
+                    <a href="mailto:uykunzehra121@gmail.com" class="email-btn-modern">
+                        <i class="fa-solid fa-paper-plane"></i> Benimle İletişime Geçin
+                    </a>
+                    <div class="copyright">
+                        &copy; 2026 Zehra Uykun. Tüm Hakları Saklıdır.
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox">
+        <button class="lightbox-close" aria-label="Kapat"><i class="fa-solid fa-xmark"></i></button>
+        <div class="lightbox-content-wrapper">
+            <img id="lightbox-image" src="" alt="Tam Boyut Görsel">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
